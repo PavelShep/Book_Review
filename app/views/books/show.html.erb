@@ -3,5 +3,8 @@
 <p><%= @book.description %></p>
 
 <%= link_to "Back", root_path %>
-<%= link_to "Edit", edit_book_path(@book) %>
-<%= link_to "Delete", book_path(@book), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+
+<% if user_signed_in? && @book.user_id == current_user %>
+  <%= link_to "Edit", edit_book_path(@book) %>
+  <%= link_to "Delete", book_path(@book), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+<% end %>
