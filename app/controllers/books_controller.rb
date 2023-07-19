@@ -25,6 +25,7 @@ class BooksController < ApplicationController
   end
 
   def edit
+    @categories = Category.all.map{|c| [c.name, c.id]}
   end
 
   def update
