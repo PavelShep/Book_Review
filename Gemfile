@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'simple_form', '~> 5.2.0'
+gem 'devise', '~> 4.9', '>= 4.9.2'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
