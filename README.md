@@ -23,7 +23,7 @@ The Book Review project is a web application for reviewing. Users can register, 
 ## Technologies Used
 
 - Ruby on Rails 7
-- SQlite3 (or your preferred database)
+- SQLite3 (or your preferred database)
 - HTML, CSS, JavaScript
 
 ## Installation
