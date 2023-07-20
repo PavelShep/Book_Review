@@ -1,4 +1,9 @@
-<p><%= review.rating %></p>
+<% review.rating.to_i.times do  %>
+ <span class="glyphicon glyphicon-star"></span>
+<% end %>
+<% review.blank_stars.times do %>
+ <span class="glyphicon glyphicon-star-empty"></span>
+<% end %>
 <p><%= review.comment %></p>
 
 <% if user_signed_in? && review.user_id == current_user.id %>
