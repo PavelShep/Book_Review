@@ -19,8 +19,7 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new(book_params)
-    @book.user = current_user
+    @book = current_user.books.new(book_params)
     @book.category_id = params[:category_id]
     if @book.save
       redirect_to root_path
@@ -49,7 +48,7 @@ class BooksController < ApplicationController
   private
 
     def book_params
-      params.require(:book).permit(:title, :description, :author, :category_id)
+      params.require(:book).permit(:title, :description, :author, :category_id, :image)
     end
 
     def find_book
