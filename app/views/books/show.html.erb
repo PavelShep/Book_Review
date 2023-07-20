@@ -5,6 +5,8 @@
   <div class="col-md-8"></div>
     <h2><%= @book.title %></h2>
     <h3><%= @book.author %></h3>
+    <h2>Average Rating: <%= @book.average_rating %></h2>
+    <span>Based on <%= pluralize(@book.reviews.count, 'review') %></span>
     <p><%= @book.description %></p>
   </div>
 </div>
