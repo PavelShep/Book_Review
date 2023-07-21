@@ -318,3 +318,22 @@ p.alert, p.notice {
 	}
 
 }
+
+.flash-messages {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+	margin-bottom: 10px;
+}
+
+#flash_notice {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+/* Стиль для сообщения об ошибке авторизации */
+#flash_alert {
+  background-color: #f2dede;
+  color: #a94442;
+}
