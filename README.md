@@ -39,7 +39,7 @@ git clone https://github.com/PavelShep/Book_Review
 3. Change directory to the project folder:
 
 ```bash
-cd book-review
+cd Book_Review
 ```
 
 4. Install the required gems:
