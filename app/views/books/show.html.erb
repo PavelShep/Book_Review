@@ -12,8 +12,10 @@
     <div class="book-info">
       <h2 class="book-title"><%= @book.title %></h2>
       <h3 class="book-author"><span>From </span><%= @book.author %></h3>
-      <h2 class="avg-rating">Average Rating: <%= @book.average_rating %></h2>
-      <span class="number-of-reviews">Based on <%= pluralize(@book.reviews.count, 'review') %></span>
+      <div class="book-avg-rating">
+        <h2 class="avg-rating">Average Rating: <%= @book.average_rating %></h2>
+        <span class="number-of-reviews">Based on <%= pluralize(@book.reviews.count, 'review') %></span>
+      </div>
       <p class="book-description"><%= @book.description %></p>
       <div class="links btn-group">
         <% if user_signed_in? && @book.user == current_user %>
