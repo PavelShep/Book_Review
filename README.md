@@ -1,5 +1,7 @@
 # Book Review
 
+![book_review](https://raw.githubusercontent.com/PavelShep/PavelShep/main/uploads/book_review.png)
+
 The Book Review project is a web application for reviewing. Users can register, log in, and create book reviews. They can also browse and read reviews submitted by other users.
 
 ## Table of Contents
@@ -52,6 +54,7 @@ bundle install
 
 ```bash
 rails db:migrate
+rails db:seed
 ```
 
 6. Start the Rails server:
@@ -71,7 +74,3 @@ rails server
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as you see fit.
